@@ -215,6 +215,19 @@ main {
   width: 100%; /* Ensures full width */
 }
 
+.footer {
+  background-image: url("https://www.brookings.edu/wp-content/uploads/2024/03/college_campus.jpg?quality=75&w=1500");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background: rgba(21, 30, 166, 0.5882352941);
+  display: flex;
+  flex-direction: column;
+}
+
 .bg-light-blue-20 {
   background-color: rgba(21, 30, 166, 0.231372549);
 }

@@ -4,11 +4,9 @@
 main {
     background: url('../image/0a2f683b0f07e3910f7941ed029d3b2c.png') no-repeat center center/cover;
     color: white;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
     overflow: hidden;
 }
@@ -40,7 +38,7 @@ main {
 }
 
 .serv-card{
-    border: 1px solid #151EA6AD;
+    border: 1px solid $blue;
     img{
         width: 50px;
         height: 50px;
@@ -120,7 +118,7 @@ main {
 
 
 .highlight-text {
-    background: #3b47c4;
+    background: $blue;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -140,4 +138,38 @@ main {
 .fade {
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
+}
+
+.admission-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 40px;
+    min-height: 100%;
+}
+
+.highlight-text {
+    color: $orange;
+}
+
+.icon {
+    color: $orange;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"] {
+    padding-right: 0;
+    padding-left: 0;
 }

@@ -34,8 +34,23 @@
 main {
   background: url("../image/0a2f683b0f07e3910f7941ed029d3b2c.png") no-repeat center center/cover;
   color: white;
-  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 
 .overlay {
@@ -53,7 +68,7 @@ main {
 }
 
 .serv-card {
-  border: 1px solid rgba(21, 30, 166, 0.6784313725);
+  border: 1px solid #151EA6;
 }
 .serv-card img {
   width: 50px;
@@ -127,14 +142,13 @@ main {
 
 .item img {
   width: 100%;
-  height: 200px; /* Adjust as needed */
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 10px;
 }
 
 .highlight-text {
-  background: #3b47c4;
+  background: #151EA6;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -144,7 +158,7 @@ main {
   text-align: center;
   padding: 20px;
   border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd !important;
 }
 
 .stats-box:nth-child(2n) {
@@ -153,6 +167,45 @@ main {
 
 .stats-box:last-child {
   border-bottom: none;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.admission-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 40px;
+  min-height: 100%;
+}
+
+.highlight-text {
+  color: #FCB305;
+}
+
+.icon {
+  color: #FCB305;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.underline {
+  width: 50px;
+  height: 3px;
+  background: white;
+  margin-top: 5px;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class^=col-] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .bg-light-blue-20 {
@@ -353,6 +406,139 @@ marquee {
     font-size: 13px; /* Adjust marquee text size on mobile */
   }
 }
+.bg-light-blue-20 {
+  background-color: rgba(21, 30, 166, 0.231372549);
+}
+
+.bg-blue {
+  background-color: #151EA6;
+}
+
+.bg-red {
+  background-color: #E5235A;
+}
+
+.bg-light-blue {
+  background-color: rgba(21, 30, 166, 0.7607843137);
+}
+
+.bg-orange {
+  background-color: #FCB305;
+}
+
+.text-blue {
+  color: #151EA6;
+}
+
+.text-red {
+  color: #E5235A;
+}
+
+.text-orange {
+  color: #FCB305;
+}
+
+.college-table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: #151EA6;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+  font-size: 13px;
+}
+
+.college-name {
+  font-weight: bold;
+  font-size: 14px;
+  color: #212529;
+}
+
+.college-location {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.rank-badge {
+  font-weight: bold;
+  background: #FCB305;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.fees {
+  font-weight: bold;
+  color: #28a745;
+  font-size: 14px;
+}
+
+.cutoff, .deadline {
+  font-weight: bold;
+  color: #dc3545;
+  font-size: 13px;
+}
+
+.ranking {
+  font-weight: bold;
+  color: #151EA6;
+  font-size: 13px;
+}
+
+.rating {
+  color: #FCB305;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+  .table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .table td {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    border-bottom: none;
+  }
+  .table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    color: #151EA6;
+  }
+}
+.college-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+
+.college-table .college-name {
+  font-weight: bold;
+}
+
+.college-table .table td, .college-table .table th {
+  font-size: 12px;
+}
+
 body {
   font-family: "Poppins", sans-serif !important;
 }/*# sourceMappingURL=main.css.map */

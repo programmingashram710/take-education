@@ -99,3 +99,23 @@ main {
     object-fit: contain;
     border-radius: 10px;
 }
+
+
+.highlight-text {
+    background: #3b47c4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.stats-box {
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.stats-box:nth-child(2n) {
+    border-right: none;
+}
+.stats-box:last-child {
+    border-bottom: none;
+}

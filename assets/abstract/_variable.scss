@@ -1,0 +1,38 @@
+$blue:#151EA6;
+$red:  #E5235A;
+$orange: #FCB305;
+$light-blue: #151EA6C2;
+$bg-light-blue-20: #151EA63B;
+
+
+.bg-light-blue-20{
+    background-color: $bg-light-blue-20;
+}
+
+.bg-blue{
+    background-color: $blue;
+}
+
+.bg-red{
+    background-color: $red;
+}
+
+.bg-light-blue{
+    background-color: $light-blue;
+}
+
+
+.bg-orange{
+    background-color: $orange;
+}
+
+.text-blue{
+    color: $blue;
+}
+
+.text-red{
+    color: $red;
+}
+.text-orange{
+    color: $orange;
+}

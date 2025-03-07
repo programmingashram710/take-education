@@ -1,0 +1,99 @@
+@import '../abstract/variable';
+
+.notice-board {
+    background: #f8f9fa; /* Light background */
+    border: 3px solid $blue; /* Blue border */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Title (Latest Announcements) */
+.notice-title {
+    background: $blue; /* Blue header */
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Notice Content */
+.notice-content {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Marquee (Moving Text) */
+marquee {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: $blue;
+    width: 100%;
+    display: block;
+}
+
+/* Animated Border Moving Around the Card */
+.notice-board::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    animation: moving-border 4s infinite linear;
+}
+
+/* Border Animation */
+@keyframes moving-border {
+    0% {
+        border-top-color: $orange;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    25% {
+        border-top-color: transparent;
+        border-right-color: $orange;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: $orange;
+        border-left-color: transparent;
+    }
+    75% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: $orange;
+    }
+    100% {
+        border-top-color: $orange;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 576px) {
+    .notice-title {
+        font-size: 14px; /* Smaller text on mobile */
+        padding: 8px;
+    }
+    marquee {
+        font-size: 13px; /* Adjust marquee text size on mobile */
+    }
+}

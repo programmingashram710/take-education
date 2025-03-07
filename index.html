@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="./assets/main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+
+ <!-- Main with Background Image -->
+ <main>
+    <div class="overlay">
+        <!-- Header -->
+        <header class="py-2">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="header-text">
+                    <a href="#" class="btn btn-sm bg-transparent btn text-light"><i class="fab  fa-whatsapp text-light"></i> Enquire us on WhatsApp</a>
+                </div>
+                <div class="header-text">
+                    <a href="tel:+918237699993" class="btn btn-sm ps-1 py-1 small-text btn-light fw-bold"> <i class="fas fa-phone-alt"></i> <span class="text-blue"><span class="d-md-inline-block" style="display: none;">For Admission,</span> Call</span> <span class="text-red"> +91 82376 99993</span></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg border-top border-bottom navbar-dark py-0" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">
+                    <img src="./image/logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+
+                        <!-- Admission Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="admissionDropdown" role="button" data-bs-toggle="dropdown">
+                                Admission
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Undergraduate</a></li>
+                                <li><a class="dropdown-item" href="#">Postgraduate</a></li>
+                                <li><a class="dropdown-item" href="#">Scholarships</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Direct Admission Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="directAdmissionDropdown" role="button" data-bs-toggle="dropdown">
+                                Direct Admission
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Apply Online</a></li>
+                                <li><a class="dropdown-item" href="#">Eligibility Criteria</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Careers -->
+                        <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+
+                        <!-- News & Updates Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="newsDropdown" role="button" data-bs-toggle="dropdown">
+                                News & Updates
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Latest News</a></li>
+                                <li><a class="dropdown-item" href="#">Events</a></li>
+                                <li><a class="dropdown-item" href="#">Announcements</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#">Reach Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container py-5">
+            <div class="row align-items-center">
+                <!-- Left Side: Text Content -->
+                <div class="col-lg-6 text-white text-start">
+                    <p class="lead mt-3 fs-6 fs-md-5 text-light">Searching for the top university or college for your graduation?</p>
+                    <h1 class="fw-bold display-3">Top <span class="text-orange">Colleges</span> for B.Tech</h1>
+                    <p class="lead mt-3 fs-6 fs-md-5">Find the best colleges offering B.Tech programs with top-notch faculty and placements.</p>
+                    <a href="#" class="btn bg-orange btn-warning btn-lg mt-3">Explore Now</a>
+                </div>
+        
+                <!-- Right Side: Request a Callback Form -->
+                <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
+                    <div class="bg-white mt-5  rounded shadow-lg w-100" style="max-width: 450px;">
+                        <h4 class="text-center p-3 text-dark mb-0 border border-bottom">Request a <span class="text-orange">Callback</span></h4>
+                        <form class="p-4">
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-blue">Full Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-transparent"><i class="fas fa-user"></i></span>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                </div>
+                            </div>
+        
+                            <div class="mb-3">
+                                <label for="phone" class="form-label text-blue">Phone Number</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-transparent"><i class="fas fa-phone"></i></span>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                                </div>
+                            </div>
+        
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-blue">Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-transparent"><i class="fas fa-envelope"></i></span>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+        
+                            <button type="submit" class="btn btn-primary rounded-pill text-light bg-light-blue w-100">Send Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<div class="container mt-4">
+    <div class="col-md-8 mx-auto">
+        <div class="notice-board shadow-md bg-light-blue-20 p-0">
+            <div class="notice-title">📢 Latest Announcements</div>
+            <div class="p-3">
+                <marquee behavior="scroll" direction="left" scrollamount="5">
+                    Study MBBS / B.Tech / MBA and other courses in Top Universities and College anywhere in India. Top Universities in Chhattisgarh, Madhya Pradesh, Maharashtra, Karnataka & Uttar Pradesh.
+                </marquee>
+                <a href="#"  class="btn mt-2 z-3 position-relative btn-sm btn-primary bg-blue">View All</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<article class="py-3 mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <span class="badge bg-light-blue-20 text-blue"><i class="fa-solid fa-graduation-cap"></i> TOP COLLEGS</span>
+                    <h2 class="mt-2">Explore Colleges & <span class="text-blue">Universities</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 text-center">
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 p-md-3 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/surface1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Engineering</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+        
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 p-md-3 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/management 1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Management</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+        
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 p-md-3 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/engineer 1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Medical</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+        
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 p-md-3 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/science 1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Science</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+        
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 p-md-3 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/engineer 1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Arts</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+        
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 p-md-3 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/science 1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Science</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/surface1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Engineering</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+    
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/management 1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Management</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+    
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/engineer 1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Medical</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+    
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/science 1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Science</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+    
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/engineer 1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Arts</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2 col-6 mb-4">
+                <div class="p-4 rounded bg-white rounded-3 serv-card h-100">
+                    <img src="./image/science 1.svg" alt="">
+                    <h5 class="fw-bold fs-6 fs-md-5 mt-3">Science</h5>
+                    <p class="text-blue">301 Colleges</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<section class="mt-4 py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <span class="badge bg-light-blue-20 text-blue"><i class="fa-solid fa-graduation-cap"></i> TOP COLLEGS</span>
+                    <h2 class="mt-2">Trusted by the <span class="text-blue">world’s best</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="owl-carousel owl-theme">
+                <!-- Slide 1 -->
+                <div class="item">
+                    <div class="p-4 rounded bg-white shadow-sm text-center slide-brand">
+                        <img src="./image/image 1 (1).svg" alt="Logo 1" class="img-fluid">
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="item">
+                    <div class="p-4 rounded bg-white shadow-sm text-center slide-brand">
+                        <img src="./image/image 2.svg" alt="Logo 2" class="img-fluid">
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="item">
+                    <div class="p-4 rounded bg-white shadow-sm text-center slide-brand">
+                        <img src="./image/image 4.svg" alt="Logo 3" class="img-fluid">
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="item">
+                    <div class="p-4 rounded bg-white shadow-sm text-center slide-brand">
+                        <img src="./image/image 4.svg" alt="Logo 3" class="img-fluid">
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="item">
+                    <div class="p-4 rounded bg-white shadow-sm text-center slide-brand">
+                        <img src="./image/image 2.svg" alt="Logo 2" class="img-fluid">
+                    </div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="item">
+                    <div class="p-4 rounded bg-white shadow-sm text-center slide-brand">
+                        <img src="./image/image 4.svg" alt="Logo 3" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn bg-orange btn-warning btn-lg">Find More Colleges</button>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<section class="container custom-section mt-3">
+    <div class="row g-0"> <!-- g-0 removes gaps -->
+
+        <!-- Left Top Section -->
+        <div class="col-md-6">
+            <div class="box bg-blue text-white">
+                <h5>Looking for direct admission in courses all over India?</h5>
+                <h2 class="display-2 fw-bold mt-3">A NAME YOU <span class="text-warning">CAN TRUST</span></h2>
+                <button class="btn btn-lg btn-warning fw-bold mt-4">GET STARTED</button>
+            </div>
+        </div>
+
+        <!-- Right Top Section -->
+        <div class="col-md-6">
+            <div class="box bg-orange text-dark">
+                <p class="lead mt-3 fs-6 fs-md-5">
+                    Take Admission is a  leading direct <strong>admission consultancy</strong>, dedicated to guiding students across India toward their dream colleges. With years of <strong>expertise</strong>, proven strategies, and a <strong>student-first approach</strong>, we have successfully helped countless students secure <strong>admissions</strong> in top institutions.
+                </p>
+                <p class="lead mt-3 fs-6 fs-md-5">
+                    We provide expert counseling, admission assistance, and guidance for <strong> leading colleges</strong> and <strong>universities</strong> in India and abroad, ensuring a smooth and <strong>hassle-free admission</strong> process—even within <strong>tight timelines</strong>.
+                </p>
+            </div>
+        </div>
+
+        <!-- Left Bottom Section (Vision) -->
+        <div class="col-md-6 order-2 order-md-1"> <!-- Reverse order for mobile -->
+            <div class="box bg-orange text-dark">
+                <h2 class="fw-bold display-3">Our <span class="text-blue">Vision</span></h2>
+                <div class="line-blue my-3"></div>
+                <p class="mt-3 lead mt-3 fs-6 fs-md-5">
+                    Our Vision is to build strong and credible relationships with partner Institutions and help students get admission in a short period of time without any hustle.
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Bottom Section (Mission) -->
+        <div class="col-md-6 order-1 order-md-2"> <!-- Reverse order for mobile -->
+            <div class="box bg-blue text-white">
+                <h2 class="fw-bold display-3">Our <span class="text-warning">Mission</span></h2>
+                <div class="line-orange my-3"></div>
+                <p class="mt-3 lead mt-3 fs-6 fs-md-5">
+                    To be the  fs-md-5ing Educational Consulting Organization, to create success stories for our students, value additions to partner Institutions, and to all other stakeholders.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<article class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <span class="badge bg-light-blue-20 text-blue"><i class="fa-solid fa-graduation-cap"></i> TOP COLLEGS</span>
+                    <h2 class="mt-2">DO More With<span class="text-blue"> Better Options</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="carousel-container">
+                <div class="owl-carousel custom-carousel">
+                    <div class="item"><img src="./image/e1b84135807e03711bee5af6e693d28a.png" alt="Image 1"></div>
+                    <div class="item"><img src="./image/d2d69fec0417883c31e7cf137f3a50e7.png" alt="Image 2"></div>
+                    <div class="item"><img src="./image/d2d69fec0417883c31e7cf137f3a50e7.png" alt="Image 3"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</article>
+
+
+<!-- Include jQuery & Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".custom-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: { items: 1 }, /* 1 image on mobile */
+                600: { items: 2 }, /* 2 images on tablets */
+                1000: { items: 3 } /* 3 images on larger screens */
+            }
+        });
+    });
+</script>
+
+<!-- Owl Carousel Initialization -->
+<script>
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop: true,          // Infinite loop
+        margin: 20,         // Space between slides
+        nav: false,          // Next/Prev buttons
+        dots: false,        // Hide dots
+        autoplay: true,     // Auto sliding
+        autoplayTimeout: 2000, // Slide speed
+        responsive:{
+            0:{ items:2 },  // 2 logos on mobile
+            600:{ items:3 }, // 3 logos on tablets
+            1000:{ items:4 } // 4 logos on desktops
+        }
+    });
+});
+</script>
+<!-- jQuery (Needed for Scroll Detection) -->
+
+<!-- Scroll Script -->
+<script>
+$(document).ready(function(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {  // If user scrolls 50px down
+            $("#mainNavbar").addClass("sticky-navbar");
+        } else {
+            $("#mainNavbar").removeClass("sticky-navbar");
+        }
+    });
+});
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

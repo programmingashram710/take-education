@@ -1,0 +1,10 @@
+@import './vendors/bs';
+@import './pages/home';
+@import './abstract/variable';
+@import './component/nav';
+@import './component/notice_board';
+
+
+body{
+    font-family: "Poppins", sans-serif !important;
+}

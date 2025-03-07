@@ -173,3 +173,10 @@ main {
     padding-right: 0;
     padding-left: 0;
 }
+
+
+.blog-carousel .card-img-top {
+    height: 160px; /* Adjust height as needed */
+    object-fit: cover;
+    width: 100%; /* Ensures full width */
+}

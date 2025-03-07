@@ -208,6 +208,13 @@ main {
   padding-left: 0;
 }
 
+.blog-carousel .card-img-top {
+  height: 160px; /* Adjust height as needed */
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%; /* Ensures full width */
+}
+
 .bg-light-blue-20 {
   background-color: rgba(21, 30, 166, 0.231372549);
 }

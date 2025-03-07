@@ -1,10 +1,28 @@
 @import '../abstract/variable';
 
+
 main {
     background: url('../image/0a2f683b0f07e3910f7941ed029d3b2c.png') no-repeat center center/cover;
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 .overlay {
     background: #151EA696;
@@ -95,7 +113,7 @@ main {
 }
 .item img {
     width: 100%;
-    height: 200px; /* Adjust as needed */
+   
     object-fit: contain;
     border-radius: 10px;
 }
@@ -111,11 +129,15 @@ main {
     text-align: center;
     padding: 20px;
     border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd !important;
 }
 .stats-box:nth-child(2n) {
     border-right: none;
 }
 .stats-box:last-child {
     border-bottom: none;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
 }

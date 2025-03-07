@@ -18,7 +18,7 @@
 <body>
 
  <!-- Main with Background Image -->
- <main>
+ <main id="dynamicBackground">
     <div class="overlay">
         <!-- Header -->
         <header class="py-2">
@@ -95,7 +95,9 @@
                 <!-- Left Side: Text Content -->
                 <div class="col-lg-6 text-white text-start">
                     <p class="lead mt-3 fs-6 fs-md-5 text-light">Searching for the top university or college for your graduation?</p>
-                    <h1 class="fw-bold display-3">Top <span class="text-orange">Colleges</span> for B.Tech</h1>
+                    <h1 class="fw-bold display-3 " id="dynamicHeading">
+                        Top <span class="text-orange">Colleges</span> for B.Tech
+                    </h1>
                     <p class="lead mt-3 fs-6 fs-md-5">Find the best colleges offering B.Tech programs with top-notch faculty and placements.</p>
                     <a href="#" class="btn bg-orange btn-warning btn-lg mt-3">Explore Now</a>
                 </div>
@@ -442,6 +444,54 @@
 </div>
 
 
+
+<script>
+    const images = [
+        "../image/0a2f683b0f07e3910f7941ed029d3b2c.png",
+        "https://skilloutlook.com/storage/2017/02/Central-University-South-Vihar.jpg",
+        "https://en-media.thebetterindia.com/uploads/2016/01/Untitled-design-24.jpg",
+        "https://images.shiksha.com/mediadata/images/articles/1728449149phphsZodm.jpeg",
+        "https://img.freepik.com/free-photo/hercules-hall-surrounded-by-greenery-sunlight-daytime-munich-germany_181624-17876.jpg"
+    ];
+
+    let index = 0;
+    const mainElement = document.getElementById("dynamicBackground");
+
+    function changeBackground() {
+        index = (index + 1) % images.length;
+        mainElement.style.backgroundImage = `url('${images[index]}')`;
+    }
+
+    setInterval(changeBackground, 5000); // Change background every 5 seconds
+</script>
+<script>
+    const headingTexts = [
+        'Top <span class="text-orange">Colleges</span> for B.Tech',
+        'Best <span class="text-orange">Universities</span> for Engineering',
+        'Top <span class="text-orange">Institutes</span> for Technology',
+        'Best <span class="text-orange">Engineering</span> Colleges in India',
+        'Leading <span class="text-orange">Tech</span> Universities Worldwide'
+    ];
+
+    let headingIndex = 0;
+    const headingElement = document.getElementById("dynamicHeading");
+
+    function changeHeading() {
+        // Apply fade-out effect
+        headingElement.classList.add("fade");
+
+        setTimeout(() => {
+            // Change text after fade-out
+            headingIndex = (headingIndex + 1) % headingTexts.length;
+            headingElement.innerHTML = headingTexts[headingIndex];
+
+            // Apply fade-in effect
+            headingElement.classList.remove("fade");
+        }, 800); // Wait for the fade-out transition to complete
+    }
+
+    setInterval(changeHeading, 5000); // Change heading every 5 seconds
+</script>
 
 <!-- Include jQuery & Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
